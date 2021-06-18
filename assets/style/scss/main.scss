@@ -1,0 +1,380 @@
+// Variable
+@import "./utilities/_colors.scss";
+@import "./utilities/_variables.scss";
+@import "./utilities/_function.scss";
+@import "./utilities/_mixins.scss";
+
+// @include font-face(Inter, assets/fonts/Inter-Black,$font-black,black,ttf);
+// @include font-face(Inter, assets/fonts/Inter-Bold,$font-bold,bold,ttf);
+// @include font-face(Inter, assets/fonts/Inter-SemiBold,$font-semibold,semi-bold,ttf);
+// @include font-face(Inter, assets/fonts/Inter-Medium,$font-medium,medium,ttf);
+// @include font-face(Inter, assets/fonts/Inter-Regular, $font-regular, normal, ttf);
+// @include font-face(Inter, assets/fonts/Inter-Light,$font-light,light,ttf);
+
+html,
+body {
+    margin: 0;
+    font-family: $primary-font;
+}
+
+#header {
+    background: $body-color;
+    height: 500px;
+
+    .navbar-brand,
+    .nav-link {
+        color: $white;
+    }
+
+    .navbar-brand {
+        margin-left: $sizing-standard - 39;
+        font-size: 20px;
+    }
+
+    .sosmed {
+        margin-right: $sizing-standard - 48;
+    }
+
+    .nav-item {
+        margin-right: $sizing-standard + 6;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .active,
+    .nav-item:hover {
+        text-decoration: line-through;
+    }
+
+    .title {
+        position: relative;
+        margin-top: -$sizing-standard * 16.5;
+    }
+
+    hr {
+        z-index: 1;
+        margin-left: $sizing-standard * 8.5;
+    }
+
+    p {
+        font-size: 70px;
+        color: $white;
+        // margin-top: -$sizing-standard + 10;
+        margin-left: $sizing-standard * 8;
+    }
+}
+
+#description {
+    margin-top: $sizing-standard + 276;
+
+    h6 {
+        font-size: $sizing-standard - 9;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: $sizing-standard + 4;
+    }
+
+    .row {
+        margin: 0px 60px 0px 60px;
+
+        .box-desc1 {
+            padding: $sizing-standard + 36;
+
+            p {
+                font-size: $sizing-standard - 4;
+            }
+        }
+
+        .box-desc2 {
+            padding: $sizing-standard + 36;
+
+            p {
+                font-size: $sizing-standard - 7;
+            }
+        }
+    }
+
+    button {
+        box-shadow: none;
+        border: none;
+        padding: $sizing-standard - 14;
+        width: 170px;
+        height: 54px;
+        background-color: $black;
+        color: $white;
+    }
+
+    button:hover {
+        background-color: $gray-3;
+        color: $black;
+    }
+}
+
+#service {
+    .card {
+        border: none;
+    }
+
+    .content {
+        margin-top: $sizing-standard - 210;
+        padding: $sizing-standard + 20;
+
+        p {
+            font-size: 20px;
+            color: $white;
+            margin-top: $sizing-standard - 5;
+        }
+    }
+}
+
+#work {
+    background: $body-color;
+    height: 664px;
+    margin-top: $sizing-standard * 5;
+    padding-top: 150px;
+    overflow: hidden;
+    position: relative;
+
+    .circle {
+        width: 500px;
+        height: 500px;
+        background: $gray-300;
+        border-radius: 50%;
+        position: absolute;
+        top: -$sizing-standard * 8.5;
+        left: $sizing-standard * 37;
+        opacity: 0.1;
+        filter: alpha(opacity=10);
+    }
+
+    .container {
+        padding: 0px 0px 0px 75px;
+
+        p {
+            font-size: 48px;
+            color: $white;
+        }
+
+        .row {
+            margin-top: 75px;
+        }
+
+
+        .nav {
+            margin-left: $sizing-standard * 2.5;
+            margin-top: $sizing-standard - 40;
+        }
+
+        .nav-link {
+            color: $second-text;
+            font-size: $sizing-standard;
+        }
+
+        .active,
+        .nav-link:hover {
+            color: $white;
+        }
+
+        .description p {
+            font-size: 17px;
+
+        }
+
+        button {
+            box-shadow: none;
+            border: none;
+            padding: $sizing-standard - 14;
+            width: 170px;
+            height: 54px;
+            background-color: $white;
+            color: $black;
+            font-weight: $font-medium;
+        }
+
+        button:hover {
+            background-color: $darky;
+            color: $white;
+        }
+    }
+}
+
+#create {
+    margin-top: $sizing-standard * 5;
+
+    .col-4 p {
+        font-size: $sizing-standard + 4;
+        margin-top: $sizing-standard * 4;
+    }
+
+    .col-5 p {
+        font-size: $sizing-standard - 7;
+        margin-top: -$sizing-standard - 30;
+    }
+
+    button {
+        box-shadow: none;
+        border: none;
+        padding: $sizing-standard - 14;
+        width: 170px;
+        height: 54px;
+        background-color: $black;
+        color: $white;
+        margin-top: $sizing-standard
+    }
+
+    button:hover {
+        background-color: $gray-3;
+        color: $black;
+    }
+
+}
+
+#values {
+    margin-top: $sizing-standard * 5;
+
+    p {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .col-9 p {
+        font-size: $sizing-standard - 8;
+        text-align: left;
+        margin-top: $sizing-standard - 4;
+    }
+
+
+    .read {
+        font-weight: $font-semibold;
+    }
+
+    .col-9 h5 {
+        font-size: $sizing-standard;
+        font-weight: $font-semibold;
+    }
+}
+
+#testimoni {
+    background: $body-color;
+    text-align: center;
+    height: 500px;
+    color: $white;
+    margin-top: $sizing-standard * 5;
+
+    .container {
+        padding: 170px 180px 0px 325px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .circle {
+        width: 500px;
+        height: 500px;
+        background: $gray-300;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+        left: $sizing-standard * 16.5;
+        top: $sizing-standard * 6;
+        opacity: 0.1;
+        filter: alpha(opacity=10);
+    }
+
+    h6 {
+        margin-top: $sizing-standard * 1.5;
+        color: $second-text;
+    }
+
+    .row {
+        margin-top: $sizing-standard * 5;
+    }
+
+    p {
+        font-size: 14px;
+        color: $white;
+        margin-top: $sizing-standard - 20;
+    }
+}
+
+#client {
+    margin-top: $sizing-standard * 5;
+
+    .left {
+        padding: 0px 150px 0px 150px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 34px;
+        font-weight: $font-medium;
+    }
+}
+
+#blog {
+    margin-top: $sizing-standard * 7;
+    height: 750px;
+
+    p {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .row {
+        margin-top: $sizing-standard * 3;
+    }
+
+    .content {
+        margin-top: $sizing-standard * 11;
+    }
+
+    .content p {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    button {
+        box-shadow: none;
+        border: none;
+        padding: $sizing-standard - 14;
+        width: 170px;
+        height: 54px;
+        background-color: $black;
+        color: $white;
+        margin-top: $sizing-standard * 3;
+        margin-left: $sizing-standard * 20;
+    }
+
+    button:hover {
+        background-color: $gray-3;
+        color: $black;
+    }
+
+    img {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .date {
+        box-shadow: none;
+        border: none;
+        padding: $sizing-standard - 10;
+        width: 125px;
+        height: 44px;
+        background-color: $white;
+        color: $black;
+    }
+}
+
+
+
+
+
+
+// Home Style
+@import "_home.scss";
